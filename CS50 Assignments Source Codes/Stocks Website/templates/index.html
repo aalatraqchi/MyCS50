@@ -1,0 +1,44 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Log In
+{% endblock %}
+
+{% block main %}
+<main class="container py-5 text-center">
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th class="text-start">Symbol</th>
+                <th class="text-start">Name</th>
+                <th class="text-end">Shares</th>
+                <th class="text-end">Price</th>
+                <th class="text-end">TOTAL</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for symbol, items in stocks.items() %}
+            <tr>
+                {% if items[1] > 0 %}
+                <td class="text-start">{{ symbol }}</td>
+                <td class="text-start">{{ items[0] }}</td>
+                <td class="text-end">{{ items[1] }}</td>
+                <td class="text-end">{{ items[2] }}</td>
+                <td class="text-end">{{ items[3] }}</td>
+                {% endif %}
+            </tr>
+            {% endfor %}
+        </tbody>
+        <tfoot>
+            <tr>
+                <td class="border-0 fw-bold text-end" colspan="4">Cash</td>
+                <td class="border-0 text-end">{{ cash }}</td>
+            </tr>
+            <tr>
+                <td class="border-0 fw-bold text-end" colspan="4">TOTAL</td>
+                <td class="border-0 text-end">{{ total }}</td>
+            </tr>
+        </tfoot>
+    </table>
+</main>
+{% endblock %}

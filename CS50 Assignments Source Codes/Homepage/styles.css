@@ -1,0 +1,137 @@
+body {
+    background-color: #FFB09F;
+    color: white;
+}
+
+
+h1 {
+    font-family: "copperplate", fantasy;
+    font-size: 7vw;
+    color: #FFB09F;
+    -webkit-text-stroke-width: 4px;
+    -webkit-text-stroke-color: black;
+}
+
+
+h2 {
+    background-color: black;
+    font-family: "Times New Roman", serif;
+    font-size: 3vw;
+    color: #FFB09F;
+    margin: .5vw 83vw .5vw 1vw;
+    padding: 1vw;
+    border: .5vw solid black;
+}
+
+
+h3 {
+    text-align: center;
+    font-family: "Times New Roman", serif;
+    font-size: 6vw;
+    font-weight: 600;
+    color: #FFB09F;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+    border-bottom: .2vw double black;
+}
+
+
+h4 {
+    text-align: left;
+    font-family: "Times New Roman", serif;
+    font-size: 5vw;
+    font-weight: 600;
+    color: black;
+    margin-left: 2vw;
+    margin-right: 83vw;
+}
+
+
+h4:hover {
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: white;
+    cursor: pointer;
+}
+
+
+p {
+    color: black;
+    font-family: "Times New Roman", serif;
+    font-size: 1.5vw;
+    margin: 1.7vw 30vw 1.7vw 5vw;
+    text-indent: 45px;
+}
+
+
+ul {
+    margin: 1vw 83vw 1vw 1vw;
+    border-left: .4vw double black;
+    background-color: #FF947C;
+}
+
+
+li {
+    color: black;
+    font-family: "TImes New Roman", serif;
+    font-size: 2vw;
+}
+
+
+.background-image {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    background-image: url("https://miro.medium.com/max/851/1*KjMhqEqBQhplAkisJfMXaw.jpeg");
+    background-repeat: repeat-x;
+    background-position: right top;
+    width: 100%;
+    height: 100%;
+    filter: blur(2px);
+    -webkit-filter: blur(2px);
+    display: block;
+}
+
+
+.pagetitle {
+    text-align: center;
+    border-bottom: 20px solid black;
+    padding: 3.5vw;
+    margin-bottom: .6vw;
+}
+
+
+.buttons {
+    position: absolute;
+    right: .5vw;
+    margin: .1vw;
+}
+
+
+.images {
+    margin: 1vw 25vw 1vw 1vw;
+    position: absolute;
+    left: 20vw;
+    top: 18vw;
+}
+
+.images img {
+    width: 17vw;
+    height: 12vw;
+    border: .3vw double black;
+    margin: .1vw;
+}
+
+
+.goals p {
+    text-align: center;
+    color: black;
+    font-family: "TImes New Roman", serif;
+    font-size: 2vw;
+    margin: 5vw;
+}
+
+
+.project-info p {
+    font-size: 1.3vw;
+}

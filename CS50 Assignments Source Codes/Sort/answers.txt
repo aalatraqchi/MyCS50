@@ -1,0 +1,23 @@
+sort1 uses: Bubble sort
+
+How do you know?:
+
+I was able to distinguish this sort from sort 3 when comparing the times to complete random/reverse to the sorted lists. Although this took extremely long to sort out the random and reverse
+lists, it was able to sort the sorted lists in under a second, with the 50,000 taking 0.651 seconds. This makes sense because bubble sort compares two numbers and swaps them and if they are
+already in the correct position, it leaves them alone. That results in the sort only running once all the way through since all the numbers are in place and it doesn't have to swap any.
+
+sort2 uses: Merge sort
+
+How do you know?:
+
+The answer to this was clear from my first run of random50000 for all three files. This one sorted 50,000 random numbers in 0.604s compared to 7.977s and 3.244s
+that it took for sort 1 and sort 2 to complete the list, respectively. I tested all text files just to make sure and compare all of them, and this sort completed all of the text files
+in under one second, clearly making it merge sort.
+
+sort3 uses: Selection sort
+
+How do you know?:
+
+This sort remained slow and had similar times for all three types of lists. This clearly gives it away because even when the list is sorted, it took about the same amount
+of time to sort them as when the list was random/reversed. This makes sense since this sort still has to follow the same process of looking for the smallest number and putting it in
+the beginning regardless of whether the numbers are already sorted or not.

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+                <h3>How many states does the United States consist of?</h3>
+                    <button class="ic">13</button>
+                    <button class="ic">51</button>
+                    <button class="c">50</button>
+                    <button class="ic">49</button>
+
+                    <p id="feedback"></p>
+
+                    <script>
+                        // Clicking the correct answer will change the button to green and say "Correct!"
+                        let correct = document.querySelector('.c');
+                        correct.addEventListener('click', function() {
+                            correct.style.backgroundColor = 'green';
+                            document.querySelector('#feedback').innerHTML = 'Correct!';
+                        });
+
+                        // Clicking the incorrect buttons will change their color to red and say "Incorrect!"
+                        let incorrect = document.querySelectorAll('.ic');
+
+                        // This will loop through all incorrects
+                        for (let i = 0; i < incorrect.length; i++)
+                        {
+                            incorrect[i].addEventListener('click', function()
+                            {
+                                incorrect[i].style.backgroundColor = 'red';
+                                document.querySelector('#feedback').innerHTML = 'Incorrect!';
+                            })
+                        }
+                    </script>
+            </div>
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+                <h3>In what state is Harvard University located?</h3>
+                    <input type="text">
+                    <button id="check">Check Answer</button>
+
+                    <p id="feedback2"></p>
+                <script>
+
+                    // Check free response answer
+                    document.querySelector('#check').addEventListener('click', function()
+                    {
+                        let user_input = document.querySelector('input');
+                        if (user_input.value === "Massachusetts")
+                        {
+                            user_input.style.backgroundColor = 'green';
+                            document.querySelector('#feedback2').innerHTML = 'Correct!';
+                        }
+                        else
+                        {
+                            user_input.style.backgroundColor = 'red';
+                            document.querySelector('#feedback2').innerHTML = 'Incorrect!';
+                        }
+                    })
+                </script>
+
+            </div>
+        </div>
+    </body>
+</html>

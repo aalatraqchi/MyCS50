@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        <link href="styles.css" rel="stylesheet">
+        <title>Goals</title>
+    </head>
+    <body>
+        <div class="background-image"></div>
+        <div class="pagetitle">
+            <h1>Looking into the Future</h1>
+        </div>
+        <div class="buttons">
+            <button type="button" class="btn btn-dark" value="https://aalatraqchi-code50-112671668-q7qjx95jjg73xw5x-8080.githubpreview.dev/index.html">Home</button>
+            <button type="button" class="btn btn-dark" value="https://aalatraqchi-code50-112671668-q7qjx95jjg73xw5x-8080.githubpreview.dev/hobbies.html">Hobbies</button>
+            <button type="button" class="btn btn-dark" value="https://aalatraqchi-code50-112671668-q7qjx95jjg73xw5x-8080.githubpreview.dev/goals.html">Goals</button>
+            <button type="button" class="btn btn-dark" value="https://aalatraqchi-code50-112671668-q7qjx95jjg73xw5x-8080.githubpreview.dev/project.html">Current Project</button>
+        </div>
+        <div class="goals">
+            <h3>Goals</h3>
+            <p>
+                I see myself continuing with programming and perfecting my skills. I hope to work on a lot of my own projects to utilize my entire imagination and creativity
+                and work more freely. When I am comfortable and have enough successful and intriguing projects, I will most likely look for a programming related job
+                under a bigger company to earn a stable salary and not just do it for fun.
+            </p>
+        </div>
+    <script>
+        let buttons = document.querySelectorAll('div.buttons > button');
+
+        // Loop through all buttons and go to their value when clicked (their value is set to their link)
+        for (let i = 0; i < buttons.length; i++)
+        {
+            buttons[i].addEventListener('click', function() {
+            window.location = buttons[i].value;
+            })
+        }
+
+        var siteWidth = 1280;
+        var scale = window.outerWidth / siteWidth;
+
+        document.querySelector('meta[name="viewport"]').setAttribute('content', 'width='+siteWidth+', initial-scale='+scale+', maximum-scale='+scale+'');
+    </script>
+    </body>
+</html>
