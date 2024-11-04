@@ -1,2 +1,2 @@
 # MyCS50
-All my assignments from Harvard's CS50x course
+This repository includes all the code I have written for assignments in Harvard's CS50 course.
